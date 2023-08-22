@@ -1,0 +1,95 @@
+table{
+    margin: 40px auto;
+    width: 60%;
+    background-color: rgb(121, 121, 168);
+}
+
+table, td{
+    border: 2px solid black;
+}
+td{
+    text-align: center;
+    padding: 10px;
+}
+
+.imageContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td .imgSection{
+    width: 200px;
+    border: none;
+}
+
+td img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+tr:nth-child(even){
+    background-color: darkseagreen;
+}
+
+.routeBtn{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.back{
+        border: none;
+        outline: none;
+        padding: 10px 25px;
+        background-color: blue;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        border-radius: 15px;
+        transition: all .2s linear;
+        cursor: pointer;
+    }
+    
+    .back:hover{
+        transform: scale(1.1);
+        background-color: purple;
+    }
+
+@media  (max-width:748px) {
+    table{
+        width: 80%;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
+@media  (max-width:500px) {
+    table{
+        width: 90%;
+    }
+
+    td .imgSection{
+        width: 100px;
+     
+    }
+
+    td img{
+        width: 100px;
+        height: 100px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+    .back{
+        padding: 8px 15px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+}

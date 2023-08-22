@@ -1,0 +1,172 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    max-height: min-content;
+    background-color: gray;
+    padding: 20px;
+}
+
+.container .capture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+} 
+
+.container .capture video{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.container .capture .captureBtns{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container .capture .btn{
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    background-color: blue;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.container .capture .startBtn{
+    background-color: green;
+}
+
+.container .capture .btn:hover{
+    transform: scale(1.1);
+    background-color: red;
+}
+
+
+.container .showCaptured{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.clickedImage{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black; 
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.fields{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+input{
+    padding-left: 5px;
+    border-radius: 10px;
+    border: none;
+    height: 35px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.saveBtn{
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.clickBtn{
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.clickBtn:hover{
+    transform: scale(1.1);
+    background-color: purple;
+}
+
+@media (max-width:748px) {
+    
+.container .capture video{
+    width: 150px;
+    height: 150px;
+}
+.clickedImage{
+    width: 200px;
+    height: 200px;
+}
+
+.fields{
+    font-size: 20px;
+
+}
+
+input{
+    height: 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.clickBtn{
+    padding: 8px 20px;
+    font-size: 18px;
+
+}
+}
+
+@media (max-width:500px) {
+    .clickedImage{
+        width: 150px;
+        height: 150px;
+    }
+
+.container .capture .btn{
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+    .fields{
+        font-size: 14px;
+    }
+
+    input{
+        height: 18px;
+        font-size: 12px;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+    .clickBtn{
+        padding: 5px 15px;
+        font-size: 16px;
+    
+    }
+}
